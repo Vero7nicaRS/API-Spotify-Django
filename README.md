@@ -108,6 +108,7 @@ CANCIONES FAVORITAS
 -------
 
 - POST /viewset/users/{id}/canciones_favoritas/anyadir/
+
 Añade uno o varias canciones favoritas al usuario.
 Se requiere de autorización para añadir canciones favoritas a un usuario.
 
@@ -118,9 +119,11 @@ Se requiere de autorización para añadir canciones favoritas a un usuario.
         }
 
 - GET /viewset/users/{id}/canciones_favoritas/
+
 Obtiene la lista de canciones favoritas del usuario.
 
 - PUT /viewset/users/{id}/canciones_favoritas/modificar/
+
 Reemplaza completamente la lista de canciones favoritas del usuario.
 Se requiere de autorización para realizar la modificación de las canciones favoritas de un usuario.
 
@@ -149,4 +152,4 @@ La llamada a la API de Spotify se realiza con “search_artist()”.
 
 Obtiene información de Spotify acerca de las canciones favoritas del usuario.
 
-La llamada a la API de Spotify se realiza con “search_artist()”.  s
+La llamada a la API de Spotify se realiza con “search_artist()”. 
