@@ -30,6 +30,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 4. Migraciones
+
 cd backend (Dirigirse a la carpeta backend)
 python manage.py makemigrations
 python manage.py migrate
