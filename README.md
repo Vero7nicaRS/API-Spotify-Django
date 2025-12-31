@@ -29,10 +29,15 @@ venv\Scripts\activate
 
 pip install -r requirements.txt
 
+4. Migraciones
+cd backend (Dirigirse a la carpeta backend)
+python manage.py makemigrations
+python manage.py migrate
 
-4. Ejecutarlo
 
-python app.py
+5. Ejecutarlo
+
+python manage.py runserver
 
 -----------
 ENDPOINTS
