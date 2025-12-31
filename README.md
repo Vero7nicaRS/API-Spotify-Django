@@ -1,4 +1,4 @@
-# Estructura de datos avanzadas
+# API SPOTIFY - DJANGO
 # ----------------------------------------
 
 ----------
@@ -58,6 +58,7 @@ Crea uno o varios usuarios.
 Obtiene la lista de todos los usuarios.
 
 - PUT /viewset/users/{id}
+
 Modifica el nombre del usuario existente. Se requiere de autorización para realizar la modificación del usuario.
     
     Body:
@@ -72,6 +73,7 @@ CANTANTES FAVORITOS
 -------
 
 - POST /viewset/users/{id}/cantantes_favoritos/anyadir/
+
 Añade uno o varios cantantes favoritos al usuario.
 Se requiere de autorización para añadir cantantes favoritos a un usuario.
 
@@ -86,6 +88,7 @@ Se requiere de autorización para añadir cantantes favoritos a un usuario.
 Obtiene la lista de cantantes favoritos del usuario.
 
 - PUT /viewset/users/{id}/cantantes_favoritos/modificar/
+
 Reemplaza completamente la lista de cantantes favoritos del usuario.
 Se requiere de autorización para realizar la modificación de los cantantes favoritos de un usuario.
 
@@ -96,6 +99,7 @@ Se requiere de autorización para realizar la modificación de los cantantes fav
         }
 
 - DELETE /viewset/users/{id}/cantantes_favoritos/eliminar/?cantante=
+
 Elimina un cantante favorito concreto del usuario.
 
 Se requiere de autorización para realizar la eliminación de los cantantes favoritos de un usuario.
@@ -113,7 +117,7 @@ Se requiere de autorización para añadir canciones favoritas a un usuario.
             "canciones_favoritas": ["Tocado y Hundido", "All you need is love"]
         }
 
-- GET /viewset/users/{id}/canciones_favoritas
+- GET /viewset/users/{id}/canciones_favoritas/
 Obtiene la lista de canciones favoritas del usuario.
 
 - PUT /viewset/users/{id}/canciones_favoritas/modificar/
@@ -127,6 +131,7 @@ Se requiere de autorización para realizar la modificación de las canciones fav
         }
         
 - DELETE /viewset/users/{id}/cantantes_favoritos/eliminar/?cancion=
+
 Elimina una canción favorita concreta del usuario.
 
 Se requiere de autorización para realizar la eliminación de las canciones favoritas de un usuario.
@@ -140,8 +145,8 @@ Obtiene información de Spotify acerca de los cantantes favoritos del usuario.
 
 La llamada a la API de Spotify se realiza con “search_artist()”.
 
-GET /viewset/users/{id}/canciones_spotify/
+- GET /viewset/users/{id}/canciones_spotify/
 
 Obtiene información de Spotify acerca de las canciones favoritas del usuario.
 
-La llamada a la API de Spotify se realiza con “search_artist()”.  
+La llamada a la API de Spotify se realiza con “search_artist()”.  s
